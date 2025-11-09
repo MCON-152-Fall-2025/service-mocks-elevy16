@@ -48,6 +48,7 @@ public class RecipeServiceImpl implements RecipeService {
             existing.setDescription(updatedRecipe.getDescription());
             existing.setIngredients(updatedRecipe.getIngredients());
             existing.setInstructions(updatedRecipe.getInstructions());
+            existing.setServings(updatedRecipe.getServings());
             return repo.save(existing);
         });
     }
